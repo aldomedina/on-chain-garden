@@ -1,0 +1,16 @@
+.wrapper {
+  display: grid;
+  height: 90vh;
+  place-items: center;
+}
+.paths {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  .separator {
+    margin-top: 2px;
+    height: 16px;
+    width: 2px;
+    background: #000;
+  }
+}
