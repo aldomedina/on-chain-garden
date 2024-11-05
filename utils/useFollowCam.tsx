@@ -8,7 +8,7 @@ export default function useFollowCam() {
   const pivot = useMemo(() => new THREE.Object3D(), []);
   const followCam = useMemo(() => {
     const o = new THREE.Object3D();
-    o.position.set(0, 1, -5);
+    o.position.set(0, 1, -2);
     return o;
   }, []);
 

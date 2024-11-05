@@ -126,7 +126,7 @@ export default function Character() {
     slopeDownExtraForce,
   } = useControls("Slope Ray", {
     slopeRayOriginOffest: {
-      value: 0.28,
+      value: 0.0,
       min: 0,
       max: 3,
       step: 0.01,
@@ -420,10 +420,10 @@ export default function Character() {
      */
     pivotPosition.set(
       characterRef.current.translation().x,
-      characterRef.current.translation().y + 0.5,
-      characterRef.current.translation().z
+      characterRef.current.translation().y, // Ajuste de altura para casi encima
+      characterRef.current.translation().z // Muy cerca en Z para estar casi encima
     );
-    pivot.position.lerp(pivotPosition, 0.2);
+    pivot.position.lerp(pivotPosition, 0.1); // Incremento del factor de interpolación para seguimiento inmediato
     state.camera.lookAt(pivot.position);
 
     /**

@@ -27,7 +27,7 @@ export function CharacterModel({ isRuning }: CharacterModel) {
     <group
       ref={group}
       dispose={null}
-      scale={[0.56, 0.56, 0.56]}
+      scale={[0.48, 0.48, 0.48]}
       position={[0, -0.62, 0]}
     >
       <group name="Sketchfab_Scene">
